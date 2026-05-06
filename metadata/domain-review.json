@@ -1,0 +1,73 @@
+{
+  "repo": "orbit-ui-form-trail",
+  "language": "Lua",
+  "category": "Frontend apps",
+  "goal": "Develop a Lua command-oriented project for form scenarios with fixture event logs, golden state snapshots, and explicit failure cases.",
+  "review_model": {
+    "terms": [
+      "view drift",
+      "state pressure",
+      "layout risk",
+      "interaction cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "view drift",
+      "signal": 41,
+      "slack": 36,
+      "drag": 27,
+      "confidence": 57,
+      "score": 94,
+      "lane": "hold"
+    },
+    {
+      "name": "stress",
+      "focus": "state pressure",
+      "signal": 68,
+      "slack": 21,
+      "drag": 32,
+      "confidence": 73,
+      "score": 134,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "layout risk",
+      "signal": 85,
+      "slack": 22,
+      "drag": 27,
+      "confidence": 89,
+      "score": 200,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "interaction cost",
+      "signal": 59,
+      "slack": 52,
+      "drag": 10,
+      "confidence": 68,
+      "score": 208,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "view drift",
+      "signal": 63,
+      "slack": 32,
+      "drag": 11,
+      "confidence": 50,
+      "score": 175,
+      "lane": "ship"
+    }
+  ]
+}
