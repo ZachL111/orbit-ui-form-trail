@@ -1,0 +1,17 @@
+{
+  "repo": "orbit-ui-form-trail",
+  "thresholds": {
+    "signal": 3,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 3,
+    "ship": 206,
+    "watch": 109
+  },
+  "terms": [
+    "view drift",
+    "state pressure",
+    "layout risk",
+    "interaction cost"
+  ]
+}
